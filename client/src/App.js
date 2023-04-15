@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
 const App = () => {
-  const [cookie, setCookie, removeCookie] = useCookies(["user"]);
+  const [cookie] = useCookies(["user"]);
 
   const authToken = cookie.AuthToken;
   return (
